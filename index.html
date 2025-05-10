@@ -9,248 +9,292 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav class="flex justify-evenly items-center mx-[8%] my-[25px] uppercase text-sm font-semibold">
-        <a href="">Каталог</a>
-        <a href="">Индивидуальная мебель</a>
-        <a href="" class="">Контакты</a>
-        <img src="img/logo.jpeg" alt="logo" class="max-w-[216px] max-h-[66px]">
-        <a href="">О компании</a>
-        <a href="">+38 (099)-638-45-37</a>
-        <div class="flex gap-[5px] items-center">
-            <p class="text-sm font-semibold">RU</p>
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
+    <nav class="flex justify-between items-center px-4 sm:px-[8%] py-4 sm:py-[25px] uppercase text-sm font-semibold">
+      <a href="" class="hidden md:block font-medium">Каталог</a>
+      <a href="" class="hidden md:block font-medium">Индивидуальная мебель</a>
+      <a href="" class="hidden md:block font-medium">Контакты</a>
+      <img src="img/logo.jpeg" alt="logo" class="w-[100px] sm:w-[150px] md:w-[216px] h-auto">
+      <a href="" class="hidden md:block font-medium">О компании</a>
+      <a href="" class="hidden md:block font-medium">+38 (099)-638-45-37</a>
+      <a href="tel:+380996384537" class="block md:hidden">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+      <div class="flex gap-2 items-center">
+        <p class="text-sm font-medium">RU</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      <button class="block md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
-    
-    <main>
-        <!-- First block -->
-        <div class="h-[800px]">
-            <div class="h-[75%] bg-[#CCB2A3] flex px-[8%] pt-[50px]">
-                <div class="w-1/4 flex flex-col justify-center ml-[135px]">
-                  <h1 class="text-4xl font-bold text-white leading-tight mb-6">
-                    <span class="text-[#FF9619]">Л</span>УЧШАЯ<br>
-                    ЖИЗНЬ, <br>СОЗДАННАЯ <br>ДЛЯ ВАС!
-                  </h1>
-                  <button class="bg-[#FF9619] text-white px-6 py-3 w-fit text-sm font-semibold uppercase">
-                    Перейти в каталог
-                  </button>
-                </div>
-            
-                <div class="w-3/4 flex justify-end relative mr-[135px]">
-                  <img src="img/divan.jpeg" alt="Диван" class="w-[870px] h-[617px] object-cover mt-[5%]">
-                  <p class="absolute text-sm text-white pr-2 pt-2 mb-[20px] text-xl">Основано в 1993 году</p>
-                </div>
-              </div>
-        </div>
-        
-        <!-- Новинки block -->
-        <div class="h-[570px] mx-[10%] flex flex-col items-center gap-y-[50px] mt-[160px] mb-[195px]">
-            <p class="self-start text-4xl font-bold"><span class="text-[#FF9619]">Н</span>овинки</p>
-            <div class="flex items-center gap-x-8">
-              <i class="fa-solid fa-angle-left  text-4xl"></i>
 
-              <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
-                <div class="w-[270px] h-[350px]">
-                  <img src="img/chair1.jpg" alt="" class="max-h-[80%]" srcset="">
-                </div>
-                
-                <p>ALBA</p>
-                <p class="text-[#FF9619]">15 000 UAH</p>
-              </div>
-              <div class="flex flex-col w-[270px] h-[350px]">
-                <div class="w-[270px] h-[350px]">
-                  <img src="img/chair2.png" class="max-h-[80%]" alt="" srcset="">
-                </div>
-                
-                <p>ALBA</p>
-                <p class="text-[#FF9619]">15 000 UAH</p>
-              </div>
-              <div class="flex flex-col w-[270px] h-[350px]">
-                <div class="w-[270px] h-[350px]">
-                  <img src="img/chair3.jpg" class="max-h-[80%]" alt="" srcset="">
-                </div>
-                
-                
-                <p>ALBA</p>
-                <p class="text-[#FF9619]">15 000 UAH</p>
-              </div>
-
-              <i class="fa-solid fa-angle-right text-4xl"></i>
-            </div>
-            <button class="bg-[#FF9619] text-white px-6 py-3 w-fit text-sm font-semibold uppercase">
+  <main>
+    <div class="h-[800px]">
+        <div class="h-[75%] bg-[#CCB2A3] flex flex-col md:flex-row px-[8%] pt-[50px]">
+            <div class="w-[100%] md:w-1/4 flex flex-col justify-center ml-0 md:ml-[135px]">
+              <h1 class="text-[25px] md:text-4xl font-bold text-white leading-tight md:w-[60%] mb-6">
+                <span class="text-[#FF9619]">Л</span>УЧШАЯ ЖИЗНЬ, СОЗДАННАЯ ДЛЯ ВАС!
+              </h1>
+              <button class="bg-[#FF9619] hidden md:block text-white px-6 py-3 w-fit text-sm font-semibold uppercase">
                 Перейти в каталог
               </button>
-        </div>
+            </div>
 
-        <!-- Индивидуальная мебель block -->
-        <div class="relative w-full h-[600px] bg-[#f5f5f5] overflow-visible">
-          <!-- Левая плиточная часть -->
-          <div class="absolute left-0 top-0 w-[50%] h-[70%] bg-[#A9C2BE] z-10 grid grid-cols-4 grid-rows-6 gap-px">
-            <!-- Картинка с диваном -->
-          
-            <div class="absolute right-0 top-[60%] transform -translate-y-1/2 z-10 shadow-xl">
-              <div class="relative">
-                <img src="img/sofa.jpg" alt="Диван" class="w-[620px] h-[370px] object-cover rounded">
-                <div class="absolute bottom-[-15%] left-[10%] w-[35%] h-[100px] bg-[#FF9619] z-[-1]"></div>
-              </div>
+            <button class="bg-[#FF9619] mt-[25%] md:mt-0 block md:hidden order-3 text-white px-6 py-3 w-fit text-sm font-semibold uppercase mx-auto">
+              Перейти в каталог
+            </button>
+
+            <div class="w-full flex justify-center relative order-2 md:w-3/4  md:mr-[135px] md:justify-end md:order-none">
+              <img src="img/divan.jpeg" alt="Диван" class="w-full h-auto object-cover mt-0 md:w-[870px] md:h-[617px] md:mt-[5%]">
+              <p class="absolute bottom-[-35%] md:top-[-10%] mb-[-3%] right-[20%] md:mb-0 right-0 text-[20px] text-white px-1 py-12">Основано в 1993 году</p>
             </div>
           </div>
-
-          <!-- Правая текстовая часть -->
-          <div class="absolute right-0 top-0 w-[70%] z-0 h-[80%] bg-[#575757] flex items-center px-[100px] mb-[160px]">
-            <div class="absolute left-[35%] text-white max-w-[420px]">
-              <h2 class="text-[35px] font-bold leading-tight mb-4">
-                <span class="text-[#FF9619]">И</span>ндивидуальная<br>мебель
-              </h2>
-              <p class="mb-3 text-[20px] font-medium">Полный цикл производства.</p>
-              <p class="text-[18px] text-gray-300 mb-6">
-                Качество мягкой мебели начинается задолго до начала ее производства.
-              </p>
-              <button class="bg-[#FF9619] text-white px-6 py-3 text-sm font-semibold uppercase">
-                индивидуальная мебель
-              </button>
+    </div>
+    
+    <div class="h-[570px] mx-[10%] flex flex-col items-center gap-y-[50px] mt-[160px] mb-[195px]">
+        <p class="self-start text-4xl font-bold"><span class="text-[#FF9619]">Н</span>овинки</p>
+        <div class="flex flex-col md:flex-row items-center gap-x-8">
+          <i class="fa-solid hidden md:block fa-angle-left  text-4xl"></i>
+          <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
+            <div class="w-[270px] h-[350px]">
+              <img src="img/chair1.jpg" alt="" class="max-h-[80%]" srcset="">
             </div>
-            <div class="absolute top-[-20px] right-[10%] w-[15%] h-[100px] bg-[#FF9619] z-[-1]">
-              <p class="absolute bottom-[20%] left-[10%] text-[15px] text-white font-[Raleway]">Furniture</p>
+            <p>ALBA</p>
+            <p class="text-[#FF9619]">15 000 UAH</p>
+          </div>
+          <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
+            <div class="w-[270px] h-[350px]">
+              <img src="img/chair2.png" class="max-h-[80%]" alt="" srcset="">
+            </div>
+            <p>ALBA</p>
+            <p class="text-[#FF9619]">15 000 UAH</p>
+          </div>
+          <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
+            <div class="w-[270px] h-[350px]">
+              <img src="img/chair3.jpg" class="max-h-[80%]" alt="" srcset="">
+            </div>
+            <p>ALBA</p>
+            <p class="text-[#FF9619]">15 000 UAH</p>
+          </div>
+
+          <i class="fa-solid fa-angle-right text-4xl hidden md:block"></i>
+        </div>
+        <button class="bg-[#FF9619] text-white px-6 py-3 w-fit text-sm font-semibold uppercase">
+            Перейти в каталог
+          </button>
+    </div>
+
+    
+    <div class="relative w-full h-[600px] bg-[#f5f5f5] mt-[800px] md:mt-0 overflow-visible">
+      <div class="absolute left-0 top-0 w-[50%] h-[70%] bg-[#A9C2BE] z-10 grid grid-cols-4 grid-rows-6 gap-px">
+        <div class="absolute right-0 top-[60%] transform -translate-y-1/2 z-10 shadow-xl">
+          <div class="relative">
+            <img src="img/sofa.jpg" alt="Диван" class="w-[620px] h-[370px] object-cover rounded">
+            <div class="absolute bottom-[-15%] left-[10%] w-[35%] h-[100px] bg-[#FF9619] z-[-1]"></div>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="absolute right-0 top-0 w-[70%] z-0 h-[80%] bg-[#575757] flex items-center px-[100px] mb-[160px]">
+        <div class="absolute left-[35%] text-white max-w-[420px]">
+          <h2 class="text-[35px] font-bold leading-tight mb-4">
+            <span class="text-[#FF9619]">И</span>ндивидуальная<br>мебель
+          </h2>
+          <p class="mb-3 text-[20px] font-medium">Полный цикл производства.</p>
+          <p class="text-[18px] text-gray-300 mb-6">
+            Качество мягкой мебели начинается задолго до начала ее производства.
+          </p>
+          <button class="bg-[#FF9619] text-white px-6 py-3 text-sm font-semibold uppercase">
+            индивидуальная мебель
+          </button>
+        </div>
+        <div class="absolute top-[-20px] right-[10%] w-[15%] h-[100px] bg-[#FF9619] z-[-1]">
+          <p class="absolute bottom-[20%] left-[10%] text-[15px] text-white font-[Raleway]">Furniture</p>
+        </div> 
+      </div>
+    </div>
+
+  
+    <!-- <div class="h-[800px] mx-[10%] flex flex-col relative">
+      <p class="font-bold text-[#343434] text-[35px]"><span class="text-[#FF9619] font-bold text-[35px]">Н</span>аша история</p>
+      
+      <div class="relative h-[550px] w-full">
+        <div class="absolute w-[35%] h-[45%] top-[10%] z-10 bg-[#5B5B5B]">
+          <div class="mx-[10%] my-[6%]">
+            <p class="text-white text-[20px]">Наработки длинной в 25 лет</p>
+            <br>
+            <p class="tracking-wider text-[18px] font-light text-white">Каждый производитель заявляет, что делает все для своих покупателей, но не каждый производитель способен подтвердить свои заявления многолетней историей </p>
+            <div class="absolute right-[5%] bottom-[-10%] w-[20%] h-[20%] bg-[#FF9619] z-[-1]">
             </div> 
           </div>
         </div>
+        <img src="img/sofa2.jpg" alt="" class="absolute right-[20%] max-h-[550px] max-w-[800px]" srcset="">
+      </div>
 
-        <!-- Наша история блок -->
-        <div class="h-[800px] mx-[10%] flex flex-col relative">
-          <p class="font-bold text-[#343434] text-[35px]"><span class="text-[#FF9619] font-bold text-[35px]">Н</span>аша история</p>
-          <!-- Контейнер для изображения с заданной высотой -->
-          <div class="relative h-[550px] w-full">
-            <div class="absolute w-[35%] h-[45%] top-[10%] z-10 bg-[#5B5B5B]">
-              <div class="mx-[10%] my-[6%]">
-                <p class="text-white text-[20px]">Наработки длинной в 25 лет</p>
-                <br>
-                <p class="tracking-wider text-[18px] font-light text-white">Каждый производитель заявляет, что делает все для своих покупателей, но не каждый производитель способен подтвердить свои заявления многолетней историей </p>
-                <div class="absolute right-[5%] bottom-[-10%] w-[20%] h-[20%] bg-[#FF9619] z-[-1]">
-                </div> 
-              </div>
-            </div>
-            <img src="img/sofa2.jpg" alt="" class="absolute right-[20%] max-h-[550px] max-w-[800px]" srcset="">
-          </div>
+      
+      <div class="flex justify-between items-center mt-auto">
+        <p class="text-[#343434] font-[Raleway] text-[25px]">1993</p>
+        <p class="text-[#3434341A] font-[Raleway] text-[144px]">25 лет</p>
+        <p class="text-[#343434] font-[Raleway] text-[25px]">2021</p>
+      </div>
+    </div> -->
 
-          <!-- Текст внизу -->
-          <div class="flex justify-between items-center mt-auto">
-            <p class="text-[#343434] font-[Raleway] text-[25px]">1993</p>
-            <p class="text-[#3434341A] font-[Raleway] text-[144px]">25 лет</p>
-            <p class="text-[#343434] font-[Raleway] text-[25px]">2021</p>
+<!--   
+    <div class="h-[570px] mx-[10%] flex flex-col items-center gap-y-[50px] mt-[160px]">
+      <p class="self-start text-4xl font-bold"><span class="text-[#FF9619]">П</span>оследние публикации</p>
+      <div class="flex items-center gap-x-8">
+        <i class="fa-solid fa-angle-left  text-4xl"></i>
+
+        <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
+          <div class="w-[270px] h-[80%]">
+            <img src="img/vladivostok1.png" alt="" class="max-h-[80%]" srcset="">
           </div>
+          <p>MARTIN</p>
         </div>
 
-        <!-- Последние публикации block -->
-        <div class="h-[570px] mx-[10%] flex flex-col items-center gap-y-[50px] mt-[160px]">
-          <p class="self-start text-4xl font-bold"><span class="text-[#FF9619]">П</span>оследние публикации</p>
-          <div class="flex items-center gap-x-8">
-            <i class="fa-solid fa-angle-left  text-4xl"></i>
-
-            <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
-              <div class="w-[270px] h-[80%]">
-                <img src="img/vladivostok1.png" alt="" class="max-h-[80%]" srcset="">
-              </div>
-              <p>MARTIN</p>
-            </div>
-
-            <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
-              <div class="w-[270px] h-[80%]">
-                <img src="img/vladivostok2.png" alt="" class="max-h-[80%]" srcset="">
-              </div>
-              <p>ALBA</p>
-            </div>
-            
-            <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
-              <div class="w-[270px] h-[80%]">
-                <img src="img/vladivostok3.png" alt="" class="max-h-[80%]" srcset="">
-              </div>
-              <p>TOSCANA</p>
-            </div>
-
-            <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
-              <div class="w-[270px] h-[80%]">
-                <img src="img/vladivostok4.png" alt="" class="max-h-[80%]" srcset="">
-              </div>
-              <p>LEONARDO</p>
-            </div>
-           
-            <i class="fa-solid fa-angle-right text-4xl"></i>
+        <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
+          <div class="w-[270px] h-[80%]">
+            <img src="img/vladivostok2.png" alt="" class="max-h-[80%]" srcset="">
           </div>
+          <p>ALBA</p>
         </div>
-
-
-
-        <div class="bg-[#A9C2BE] min-h-[450px] h-[500px] w-[100%] flex">
-          <img class="w-[40%] h-[100%] ml-[10%]" src="img/divan_questions.jpg" alt="" srcset="">
         
-           <div class="relative bg-white p-8 rounded-lg h-[90%] shadow-lg w-[30%] z-20 -ml-[5%] my-[25px]"> <!-- here -->
-            <div class="flex items-center">
-              <p class="absolute text-[#FF9619] text-[160px] font-extrabold left-[-13%]">O</p>
-              <div class="flex flex-col">
-                <h3 class="ml-[10%] text-[14px] text-[#FF9619] font-medium">Заполните форму</h3>
-                <h2 class="ml-[10%] text-[#343434] text-[28px] text-nowrap font-bold">ОСТАЛИСЬ ВОПРОСЫ?</h2>
-              </div>
-            </div>
-        
-            <div class="ml-[5%] flex flex-col items-center"> 
-              <input type="text" placeholder="Ваше имя" class="w-full p-3 mb-2 border-b border-gray-300 focus:outline-none">
-              <input type="text" placeholder="Ваш номер телефона" class="w-full p-3 mb-2 border-b border-gray-300 focus:outline-none">
-              <textarea placeholder="Страна" class="w-full p-3 mb-2 border-b border-gray-300 focus:outline-none resize-none" rows="1"></textarea>
-              <textarea placeholder="Комментарий" class="w-full p-3 mb-2 border-b border-gray-300 focus:outline-none resize-none" rows="2"></textarea>
-              <div class="flex items-center mb-2">
-                <input type="checkbox" class="mr-2">
-                <label class="text-[#343434] border-gray-300 text-[11px] font-normal text-sm">Подтверждая заказ, я принимаю условия пользовательского соглашения</label>
-              </div>
-              <button class="bg-[#FF9619] text-white px-6 py-3 w-[60%] text-sm font-semibold uppercase">Запросить звонок</button>
-            </div>
+        <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
+          <div class="w-[270px] h-[80%]">
+            <img src="img/vladivostok3.png" alt="" class="max-h-[80%]" srcset="">
+          </div>
+          <p>TOSCANA</p>
+        </div>
+
+        <div class="flex flex-col w-[270px] h-[350px] items-center justify-end">
+          <div class="w-[270px] h-[80%]">
+            <img src="img/vladivostok4.png" alt="" class="max-h-[80%]" srcset="">
+          </div>
+          <p>LEONARDO</p>
+        </div>
+      
+        <i class="fa-solid fa-angle-right text-4xl"></i>
+      </div>
+    </div> -->
+<!-- 
+
+
+    <div class="bg-[#A9C2BE] min-h-[450px] h-[500px] w-[100%] flex">
+      <img class="w-[40%] h-[100%] ml-[10%]" src="img/divan_questions.jpg" alt="" srcset="">
+    
+      <div class="relative bg-white p-8 rounded-lg h-[90%] shadow-lg w-[30%] z-20 -ml-[5%] my-[25px]"> <!-- here -->
+        <!-- <div class="flex items-center">
+          <p class="absolute text-[#FF9619] text-[160px] font-extrabold left-[-13%]">O</p>
+          <div class="flex flex-col">
+            <h3 class="ml-[10%] text-[14px] text-[#FF9619] font-medium">Заполните форму</h3>
+            <h2 class="ml-[10%] text-[#343434] text-[28px] text-nowrap font-bold">ОСТАЛИСЬ ВОПРОСЫ?</h2>
+          </div>
+        </div>
+    
+        <div class="ml-[5%] flex flex-col items-center"> 
+          <input type="text" placeholder="Ваше имя" class="w-full p-3 mb-2 border-b border-gray-300 focus:outline-none">
+          <input type="text" placeholder="Ваш номер телефона" class="w-full p-3 mb-2 border-b border-gray-300 focus:outline-none">
+          <textarea placeholder="Страна" class="w-full p-3 mb-2 border-b border-gray-300 focus:outline-none resize-none" rows="1"></textarea>
+          <textarea placeholder="Комментарий" class="w-full p-3 mb-2 border-b border-gray-300 focus:outline-none resize-none" rows="2"></textarea>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" class="mr-2">
+            <label class="text-[#343434] border-gray-300 text-[11px] font-normal text-sm">Подтверждая заказ, я принимаю условия пользовательского соглашения</label>
+          </div>
+          <button class="bg-[#FF9619] text-white px-6 py-3 w-[60%] text-sm font-semibold uppercase">Запросить звонок</button>
+        </div>
+      </div>
+    </div> -->
+
+    
+    <!-- <div class="mx-[10%] h-[230px] flex items-center gap-[10%] mt-[160px]">
+      <p class="grow text-[18px]">Осуществляемые компанией «Экми-Мебель» постоянные инвестиции в сертификацию своей продукции, убедительно подтверждают лидерство компании на украинском рынке высококачественной мягкой мебели.</p>
+      <p class="grow text-[18px]">Фабрика «Экми-мебель» сертифицирована по системе менеджмента качества ISO 9001:2000 на соответствие международным стандартам, представительством «Бюро Веритас» в Украине.</p>
+      <p class="grow text-[18px]">Компания «Экми-Мебель» первой из украинских производителей мягкой мебели обеспечила свою мебель полноценной  гарантией и первой обоснованно заявила о лучшем качестве производимой мебели.</p>
+    </div>  -->
+
+
+<!-- 
+    <div class="h-[800px]flex flex-col relative mt-[160px]">
+      <p class="ml-[10%] font-bold text-[#343434] text-[35px] mb-[80px]"><span class="text-[#FF9619] font-bold text-[35px]">Н</span>аши партнеры</p>
+      
+      <div class="relative w-full h-[600px] overflow-visible">
+        <div class="absolute left-0 top-0 w-[70%] z-0 h-[80%] bg-[#575757] flex items-center px-[100px] mb-[160px]">
+          <div class="flex flex-col w-[45%] gap-[30px]">
+            <p class="text-white text-[20px] font-medium">Компании сотрудничают с нами по всему миру</p>
+            <p class="text-white text-[20px] font-light">На данный момент дилерская сеть фабрики «Экми-Мебель» насчитывает более 30 салонов по всей Украине. Сейчас мы заинтересованы в расширении сети и предлагаем выгодные условия для сотрудничества. Основным преимуществом фабрики является изготовление любого индивидуального изделия, мягкой мебели и аксессуаров из наших основных коллекций. Также присутствует линейка оригинальных интерьерных корпусных изделий.</p>
           </div>
         </div>
 
-        <!-- Про фабрику в Украине -->
-        <div class="mx-[10%] h-[230px] flex items-center gap-[10%] mt-[160px]">
-          <p class="grow text-[18px]">Осуществляемые компанией «Экми-Мебель» постоянные инвестиции в сертификацию своей продукции, убедительно подтверждают лидерство компании на украинском рынке высококачественной мягкой мебели.</p>
-          <p class="grow text-[18px]">Фабрика «Экми-мебель» сертифицирована по системе менеджмента качества ISO 9001:2000 на соответствие международным стандартам, представительством «Бюро Веритас» в Украине.</p>
-          <p class="grow text-[18px]">Компания «Экми-Мебель» первой из украинских производителей мягкой мебели обеспечила свою мебель полноценной  гарантией и первой обоснованно заявила о лучшем качестве производимой мебели.</p>
+        <div class="absolute right-0 top-0 w-[60%] h-[70%] bg-[#CCB2A3] z-10 grid grid-cols-4 grid-rows-6 gap-px">
+          <img class="absolute w-[670px] max-w-[670px] h-[400px] max-h-[400px] top-[8%]" src="img/partners_divan.jpg" alt="">
+          <div class="absolute bottom-[-20%] h-[150px] right-[50%] w-[20%] bg-[#FF9619] z-[-1]"></div>
+          <div class="absolute top-[-5%] h-[80px] left-[-5%] w-[10%] bg-[#FF9619] z-[-1]"></div>
         </div>
+      </div> -->
 
+      
+      <!-- <div class="flex justify-center items-center gap-[10%] w-full h-[90px] overflow-hidden">
+        <img class="h-full object-contain" src="img/vogue.png" alt="">
+        <img class="h-full object-contain" src="img/apple.png" alt="">
+        <img class="h-full object-contain" src="img/zara.png" alt="">
+        <img class="h-full object-contain" src="img/samsung.png" alt="">
+      </div>
+    </div>
 
-        <!-- Наши партнеры -->
-        <div class="h-[800px]flex flex-col relative mt-[160px]">
-          <p class="ml-[10%] font-bold text-[#343434] text-[35px] mb-[80px]"><span class="text-[#FF9619] font-bold text-[35px]">Н</span>аши партнеры</p>
-          <!-- Контейнер для изображения с заданной высотой -->
-          <div class="relative w-full h-[600px] bg-[#f5f5f5] overflow-visible">
-            <div class="absolute left-0 top-0 w-[70%] z-0 h-[80%] bg-[#575757] flex items-center px-[100px] mb-[160px]">
-              <div class="flex flex-col w-[45%] gap-[30px]">
-                <p class="text-white text-[20px] font-medium">Компании сотрудничают с нами по всему миру</p>
-                <p class="text-white text-[20px] font-light">На данный момент дилерская сеть фабрики «Экми-Мебель» насчитывает более 30 салонов по всей Украине. Сейчас мы заинтересованы в расширении сети и предлагаем выгодные условия для сотрудничества. Основным преимуществом фабрики является изготовление любого индивидуального изделия, мягкой мебели и аксессуаров из наших основных коллекций. Также присутствует линейка оригинальных интерьерных корпусных изделий.</p>
+  
+    <div class="flex justify-center items-center gap-[1%] w-full h-[270px] overflow-hidden mt-[160px]">
+      <img class="h-full object-contain" src="img/last1.jpg" alt="">
+      <img class="h-full object-contain" src="img/last2.jpg" alt="">
+      <img class="h-full object-contain" src="img/last3.jpg" alt="">
+      <img class="h-full object-contain" src="img/last4.jpg" alt="">
+    </div> -->
+
+    <!-- <footer class="bg-[#4A4A4A] mt-[160px] text-white pt-16 pb-8">
+      <div class="container mx-auto px-[8%]">
+          <div class="flex flex-wrap justify-between items-start mb-12">
+              <div class="w-full md:w-auto mb-8 md:mb-0">
+                  <img src="img/logo.png" alt="Ekmi Мебель" class="h-12"> </div>
+
+              <div class="w-1/2 md:w-auto mb-8 md:mb-0">
+                  <ul class="space-y-3">
+                      <li><a href="#" class="hover:text-[#FF9619] text-sm">Каталог</a></li>
+                      <li><a href="#" class="hover:text-[#FF9619] text-sm">О Компании</a></li>
+                      <li><a href="#" class="hover:text-[#FF9619] text-sm">Индивидуальная Мебель</a></li>
+                      <li><a href="#" class="hover:text-[#FF9619] text-sm">Партнерам</a></li>
+                      <li><a href="#" class="hover:text-[#FF9619] text-sm">Дизайнерам</a></li>
+                  </ul>
               </div>
-            </div>
 
-            <div class="absolute right-0 top-0 w-[60%] h-[70%] bg-[#CCB2A3] z-10 grid grid-cols-4 grid-rows-6 gap-px">
-              <img class="absolute w-[670px] max-w-[670px] h-[400px] max-h-[400px] top-[8%]" src="img/partners_divan.jpg" alt="">
-              <div class="absolute bottom-[-20%] h-[150px] right-[50%] w-[20%] bg-[#FF9619] z-[-1]"></div>
-              <div class="absolute top-[-5%] h-[80px] left-[-5%] w-[10%] bg-[#FF9619] z-[-1]"></div>
-            </div>
+              <div class="w-1/2 md:w-auto mb-8 md:mb-0">
+                  <ul class="space-y-3">
+                      <li><a href="#" class="hover:text-[#FF9619] text-sm">2D, 3D Модели</a></li>
+                      <li><a href="#" class="hover:text-[#FF9619] text-sm">Шоу-Румы</a></li>
+                      <li><a href="#" class="hover:text-[#FF9619] text-sm">Дилерам</a></li>
+                      <li><a href="#" class="hover:text-[#FF9619] text-sm">Контакты</a></li>
+                      <li><a href="#" class="hover:text-[#FF9619] text-sm">Конфигуратор</a></li>
+                  </ul>
+              </div>
+
+              <div class="w-full md:w-auto text-left md:text-right">
+                  <div class="flex justify-start content-start space-x-4 mb-4">
+                      <a href="#" aria-label="Instagram" class="hover:text-[#FF9619]"><i class="fab fa-instagram fa-lg"></i></a>
+                      <a href="#" aria-label="Facebook" class="hover:text-[#FF9619]"><i class="fab fa-facebook-f fa-lg"></i></a>
+                  </div>
+                  <a href="tel:+380996384537" class="block mb-4 text-left hover:text-[#FF9619] text-sm">+38 (099)-638-45-37</a>
+                  <button class="bg-[#FF9619] text-white px-6 py-3 text-xs font-semibold uppercase w-full md:w-auto">
+                      Персональная консультация <i class="fas fa-arrow-right ml-2"></i>
+                  </button>
+              </div>
           </div>
 
-          <!-- Лого внизу -->
-          <div class="flex justify-center items-center gap-[10%] w-full h-[90px] overflow-hidden">
-            <img class="h-full object-contain" src="img/vogue.png" alt="">
-            <img class="h-full object-contain" src="img/apple.png" alt="">
-            <img class="h-full object-contain" src="img/zara.png" alt="">
-            <img class="h-full object-contain" src="img/samsung.png" alt="">
+          <div class="pt-8 text-center text-[12px] text-[#FFFFFF] font-medium">
+              <p>&copy; © 1993–2021 Интернет-магазин «EKMI™» — меблі</p>
           </div>
-        </div>
+      </div>
+    </footer> -->
 
-        <!-- Какие-то картинки с диванами -->
-        <div class="flex justify-center items-center gap-[1%] w-full h-[270px] overflow-hidden mt-[160px]">
-          <img class="h-full object-contain" src="img/last1.jpg" alt="">
-          <img class="h-full object-contain" src="img/last2.jpg" alt="">
-          <img class="h-full object-contain" src="img/last3.jpg" alt="">
-          <img class="h-full object-contain" src="img/last4.jpg" alt="">
-        </div>
-
-      </main>
+  </main>
+    
 </body>
 </html>
