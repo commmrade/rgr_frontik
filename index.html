@@ -85,19 +85,19 @@
     </div>
 
     
-    <div class="relative w-full h-[600px] bg-[#f5f5f5] mt-[800px] md:mt-0 overflow-visible">
-      <div class="absolute left-0 top-0 w-[50%] h-[70%] bg-[#A9C2BE] z-10 grid grid-cols-4 grid-rows-6 gap-px">
+    <div class="relative w-full flex flex-col h-[600px] mt-[1200px] md:mt-0 overflow-visible">
+      
+      <div class="absolute left-[2%] md:left-0 top-[10%] md:top-0 w-full md:w-[50%] h-[70%] bg-[#A9C2BE] z-10 gap-px">
         <div class="absolute right-0 top-[60%] transform -translate-y-1/2 z-10 shadow-xl">
           <div class="relative">
-            <img src="img/sofa.jpg" alt="Диван" class="w-[620px] h-[370px] object-cover rounded">
+            <img src="img/sofa.jpg" alt="Диван" class="w-[90%] md:w-[620px] mx-auto md:mx-0 h-[370px] object-cover rounded">
             <div class="absolute bottom-[-15%] left-[10%] w-[35%] h-[100px] bg-[#FF9619] z-[-1]"></div>
           </div>
         </div>
       </div>
-
     
-      <div class="absolute right-0 top-0 w-[70%] z-0 h-[80%] bg-[#575757] flex items-center px-[100px] mb-[160px]">
-        <div class="absolute left-[35%] text-white max-w-[420px]">
+      <div class="absolute order-2  md:right-0 top-[-60%] md:top-0 w-full md:w-[70%] z-0 h-[80%] bg-[#575757] flex items-center px-[100px] mb-[160px]">
+        <div class="absolute left-[15%] md:left-[35%] text-white max-w-[420px]">
           <h2 class="text-[35px] font-bold leading-tight mb-4">
             <span class="text-[#FF9619]">И</span>ндивидуальная<br>мебель
           </h2>
@@ -105,40 +105,48 @@
           <p class="text-[18px] text-gray-300 mb-6">
             Качество мягкой мебели начинается задолго до начала ее производства.
           </p>
-          <button class="bg-[#FF9619] text-white px-6 py-3 text-sm font-semibold uppercase">
+          <button class="hidden md:block bg-[#FF9619] text-white px-6 py-3 text-sm font-semibold uppercase">
             индивидуальная мебель
           </button>
         </div>
-        <div class="absolute top-[-20px] right-[10%] w-[15%] h-[100px] bg-[#FF9619] z-[-1]">
-          <p class="absolute bottom-[20%] left-[10%] text-[15px] text-white font-[Raleway]">Furniture</p>
+
+        
+        <div class="absolute top-[-20px] right-0 md:right-[10%] w-[25%] md:w-[15%] h-[100px] bg-[#FF9619] z-[-1]">
+          <p class="absolute bottom-[10%] md:bottom-[20%] left-[10%] md:left-[10%] text-[15px] my-auto md:my-0 text-white font-[Raleway]">Furniture</p>
         </div> 
       </div>
+      <button class="absolute bottom-[-10%] left-[20%] block md:hidden bg-[#FF9619] text-white px-6 py-3 text-sm font-semibold uppercase">индивидуальная мебель
+      </button>
     </div>
 
   
-    <!-- <div class="h-[800px] mx-[10%] flex flex-col relative">
-      <p class="font-bold text-[#343434] text-[35px]"><span class="text-[#FF9619] font-bold text-[35px]">Н</span>аша история</p>
+    <div class="h-[800px] mx-0 md:mx-[10%] top-[160px] md:top-0 flex flex-col relative">
+      <p class="font-bold ml-[10%] md:ml-0 text-[#343434] text-[35px]"><span class="text-[#FF9619] font-bold text-[35px]">Н</span>аша история</p>
       
-      <div class="relative h-[550px] w-full">
-        <div class="absolute w-[35%] h-[45%] top-[10%] z-10 bg-[#5B5B5B]">
+      <div class="relative h-[550px] md:h-[550px] mb-[150px] mx-0 w-full">
+        <div class="absolute w-full md:w-[35%] h-[55%] md:h-[65%] top-[10%] z-10 bg-[#5B5B5B]">
           <div class="mx-[10%] my-[6%]">
             <p class="text-white text-[20px]">Наработки длинной в 25 лет</p>
             <br>
-            <p class="tracking-wider text-[18px] font-light text-white">Каждый производитель заявляет, что делает все для своих покупателей, но не каждый производитель способен подтвердить свои заявления многолетней историей </p>
+            <p class="tracking-wider text-[14px] md:text-[18px] font-light text-white">Каждый производитель заявляет, что делает все для своих покупателей, но не каждый производитель способен подтвердить свои заявления многолетней историей </p>
             <div class="absolute right-[5%] bottom-[-10%] w-[20%] h-[20%] bg-[#FF9619] z-[-1]">
             </div> 
           </div>
         </div>
-        <img src="img/sofa2.jpg" alt="" class="absolute right-[20%] max-h-[550px] max-w-[800px]" srcset="">
+        <img src="img/sofa2.jpg" alt="" class="absolute top-[65%] md:top-[0%] right-[5%] md:right-0 md:right-[20%] max-h-[550px] max-w-[90%] md:max-w-[800px]" srcset="">
       </div>
 
       
-      <div class="flex justify-between items-center mt-auto">
+      <div class="flex justify-between md:top-0 items-center left-[5%] md:left-0 mt-auto mx-auto md:mx-0">
+        <p class="hidden md:block text-[#343434] font-[Raleway] text-[25px]">1993</p>
+        <p class="text-[#3434341A] font-[Raleway] whitespace-nowrap text-[100px] md:text-[144px]">25 лет</p>
+        <p class="hidden md:block text-[#343434] font-[Raleway] text-[25px]">2021</p>
+      </div>
+      <div class="block md:hidden flex justify-between md:top-0 left-[5%] mx-[5%]">
         <p class="text-[#343434] font-[Raleway] text-[25px]">1993</p>
-        <p class="text-[#3434341A] font-[Raleway] text-[144px]">25 лет</p>
         <p class="text-[#343434] font-[Raleway] text-[25px]">2021</p>
       </div>
-    </div> -->
+    </div>
 
 <!--   
     <div class="h-[570px] mx-[10%] flex flex-col items-center gap-y-[50px] mt-[160px]">
